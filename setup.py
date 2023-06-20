@@ -25,5 +25,5 @@ def download_image_files(bucket_name, destination_folder, prefix):
             print(f"Downloaded: {destination_path}")
 
 
-download_image_files('', 'train', 'train')
-download_image_files('', 'test', 'test')
+download_image_files('data-540-cv', 'train', 'train')
+download_image_files('data-540-cv', 'test', 'test')
