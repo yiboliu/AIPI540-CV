@@ -9,6 +9,7 @@ if __name__ == "__main__":
 
     upload = st.file_uploader("Upload a file")
     if upload:
+        assert(upload.name.endswith('jpg'), 'The file must be a jpg file')
         new_img_name = f"{upload.name.split('.')[0]}-with-keypoints.jpg"
         if st.button('Save File'):
             # Save the file to a designated place so that we can read later
